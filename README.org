@@ -1,0 +1,29 @@
+* Purely Functional Data Structures
+  This library contains functional data structures.
+
+  Each data structure has advantages and disadvantages which need to
+  be weight against in each situation.
+* Loading the library
+  PFDS is ASDF enabled.
+
+  Put the library somewhere ASDF can find it and run
+  (asdf:load-system :PFDS) or the appropriate form for your
+  implementation.
+* Data Structures
+  The following data structures are currently implemented:
+
+  + [[./heap.lisp][heap]]
+  + [[./queue.lisp][queue]]
+  + [[./random-access-list.lisp][random-access list]]
+
+  For more information on each data structure, refer to each file.
+* Interface
+  Each data structure has a set of specific constructors, like
+  `make-leftist-heap' and `leftist-heap'.
+
+  Each data structure has a set of generic functions it supports.
+  Refer to the header of the source file for a list of supported
+  functions.
+* Reference
+  This library relies heavily on the book "Purely Functional Data
+  Structures" by Chris Okasaki.
