@@ -19,6 +19,12 @@
 
 
 ;;;; Partial Pipe
+
+;;; A Partial Pipe is like a Pipe (sometimes called "stream"), but it
+;;; also delays `first'.  A Partial Pipe can also have mixed delayed
+;;; and not delayed elements, which is useful when implementing the
+;;; Banker's Queue.
+
 (defvar empty-ppipe nil)
 
 (defun ppipe-first (list)
