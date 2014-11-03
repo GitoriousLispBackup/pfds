@@ -9,7 +9,6 @@
   :licence "LGPL3"
   :serial t
   :components ((:file "packages")
-               (:file "utilities")
                (:file "pfds")
                (:file "delay")
                (:file "random-access-list")
